@@ -42,8 +42,8 @@ public class KadaiFirstController {
     }
     
     @GetMapping("/devide/{val1}/{val2}")
-    public int calcDivide(@PathVariable int val1, @PathVariable int val2) {
-        int result = val1 / val2;        
+    public double calcDivide(@PathVariable int val1, @PathVariable int val2) {
+        double result = (double)val1 / val2;        
         
         return result;
     }
